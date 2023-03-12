@@ -4,7 +4,7 @@ PWD=$(shell pwd)
 
 VERILOG_SOURCES = $(PWD)/script.v
 
-TOPLEVEL := script          # design
+TOPLEVEL := adder          # design
 MODULE   := testbench     # test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
