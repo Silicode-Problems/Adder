@@ -2,7 +2,7 @@ TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 
-VERILOG_SOURCES = $(PWD)/adder.v
+VERILOG_SOURCES = $(PWD)/script.v
 
 TOPLEVEL := script          # design
 MODULE   := testbench     # test
