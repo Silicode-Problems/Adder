@@ -107,4 +107,4 @@ async def adder_randomised_test(dut):
     }
     data_str = json.dumps(data)
     svg = wavedrom.render(data_str)
-    svg.saveas("demo1.png")
+    svg.saveas("demo1.svg")
