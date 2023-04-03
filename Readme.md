@@ -1,7 +1,57 @@
-# Adder
 
-You are given a module add16 that performs a 16-bit addition. Instantiate two of them to create a 32-bit adder. One add16 module computes the lower 16 bits of the addition result, while the second add16 module computes the upper 16 bits of the result, after receiving the carry-out from the first adder. Your `32-bit` adder does not need to handle carry-in (assume 0) or carry-out (ignored), but the internal modules need to in order to function correctly. (In other words, the add16 module performs `16-bit` `a` **+** `b` **+** `cin`, while your module performs 32-bit `a` **+** `b`).
+## Adder
 
-Connect the modules together as shown in the diagram below. The provided module add16 has the following declaration:
+In this question, you will implement a Verilog module that adds two 3-bit input numbers and outputs their sum.
 
-module add16 ( input[15:0] **a**, input[15:0] **b**, input **cin**, output[15:0] **sum**, output **cout** ); 
+### Specifications
+
+The Verilog module should have the following specifications:
+
+- Name: `three_bit_adder`
+- Inputs: 
+  - `a`: 3-bit input number
+  - `b`: 3-bit input number
+- Outputs:
+  - `sum`: 3-bit output number that is the sum of `a` and `b`
+
+### Verilog Code Template
+
+Here's a Verilog code template that you can use to implement the `three_bit_adder` module:
+
+```verilog
+module three_bit_adder (
+  input [2:0] a,
+  input [2:0] b,
+  output [2:0] sum
+);
+
+// Add your code here
+
+endmodule
+```
+### Task
+Implement the `three_bit_adder` module according to the given specifications. Your Verilog code should be correct and syntactically valid. Make sure that your Verilog code uses proper formatting and indentation to ensure readability.
+
+### Example
+Here's an example of how the `three_bit_adder` module should work:
+
+***Input:***
+```
+a = 011
+b = 101
+```
+***Output***
+```
+sum = 000  (Carry out = 1)
+
+```
+
+***Explanation***
+```
+011 (a)
++ 101 (b)
+-----
+  000 (sum)
+```
+
+**Note that the result is `000` because we are working with 3-bit numbers and there is a carry out from the most significant bit.**
