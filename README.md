@@ -1,5 +1,5 @@
 
-## Adder
+# Adder
 
 In this question, you will implement a Verilog module that adds two 3-bit input numbers and outputs their sum.
 
